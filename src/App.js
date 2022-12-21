@@ -3,6 +3,7 @@ import "./App.css";
 import SideBar from "./components/SideBar";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./LandingPage";
+import About from "./components/About";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       className="App"
     >
       <SideBar />
-      <LandingPage />
+      <LandingPage path="/landingpage" />
     </div>
   );
 }
