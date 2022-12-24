@@ -3,7 +3,8 @@ import React from "react";
 const style = {
   container: {
     display: "flex",
-    width: "90%",
+    width: "80%",
+    //height: "500vh",
   },
   title: {
     color: "#FFFFFF",
