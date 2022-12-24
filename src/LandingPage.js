@@ -20,7 +20,11 @@ const style = {
 function LandingPage() {
   return (
     <div styles={style.container}>
-      <h1 style={style.title}>Welcome</h1>
+      <div>
+        <h1 style={style.title}>Hello,</h1>
+        <h1 style={style.title}>I'm William Velichko</h1>
+        <h1 style={style.title}>a web developer</h1>
+      </div>
       <p style={style.p}>
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y
         archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de

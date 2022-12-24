@@ -7,7 +7,7 @@ const style = {
     flexDirection: "column",
     textAlign: "center",
     backgroundColor: "#343a40",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
     height: "100%",
     width: "30%",
     margin: 0,
@@ -16,24 +16,29 @@ const style = {
     top: "0",
   },
   logo: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
     color: "#FFFFFF",
     backgroundColor: "#343a40",
+    //border: "1px solid red",
+    height: "20%",
   },
   nav: {
     display: "flex",
     flexDirection: "column",
     textAlign: "center",
-
+    borderTop: "1px solid #6c757d",
     justifyContent: "space-evenly",
     color: "#FFFFFF",
     backgroundColor: "#343a40",
     height: "35%",
   },
   link: {
-    display: "flex",
-    alignItems: "center",
+    //display: "block",
+    textAlign: "space-evenly",
     //alignContent: "center",
-    border: "1px solid #6c757d",
+    borderBottom: "1px solid #6c757d",
     textDecoration: "none",
     color: "#FFFFFF",
     backgroundColor: "#343a40",
@@ -48,22 +53,25 @@ const style = {
 function SideBar() {
   return (
     <div style={style.mainContainer}>
-      <div style={style.logo}>WV</div>
+      <div style={style.logo}>
+        <h3>WV</h3>
+        <h5>William Velichko</h5>
+      </div>
       <div style={style.nav}>
         <Link style={style.link} className="link" to="/about ">
-          <h4>About</h4>
+          About
         </Link>
         <Link style={style.link} className="link" to="/skills">
-          <h4>Skills</h4>
+          Skills
         </Link>
         <Link style={style.link} className="link" to="/projects">
-          <h4>Projects</h4>
+          Projects
         </Link>
         <Link style={style.link} className="link" to="/work">
-          <h4>Work</h4>
+          Work
         </Link>
         <Link style={style.link} className="link" to="/contact">
-          <h4>Contact</h4>
+          Contact
         </Link>
       </div>
       <div style={style.media}>Media</div>
