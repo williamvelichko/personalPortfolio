@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const style = {
   container: {
@@ -8,6 +9,28 @@ const style = {
   },
   title: {
     color: "#FFFFFF",
+    fontFamily: "oswald",
+    width: "30%",
+    display: "flex",
+    marginLeft: "20px",
+    fontSize: "3rem",
+    margin: "0",
+  },
+  contact: {
+    textDecoration: "none",
+    display: "flex",
+    justifyContent: "center",
+    color: "#FFFFFF",
+    width: "20%",
+    padding: "5px",
+    fontSize: "1.5rem",
+    border: "2px solid black",
+    boxShadow:
+      "5px 5px 0 black -5px -5px 0 black -5px 5px 0 black 5px -5px 0 black",
+    transition: "500ms ease-in-out",
+    hover: {
+      boxShadow: "20px 5px 0 black, -20px -5px 0 black",
+    },
   },
   p: {
     display: "flex",
@@ -24,6 +47,9 @@ function LandingPage() {
         <h1 style={style.title}>Hello,</h1>
         <h1 style={style.title}>I'm William Velichko</h1>
         <h1 style={style.title}>a web developer</h1>
+        <Link style={style.contact} to="/contact">
+          Contact
+        </Link>
       </div>
       <p style={style.p}>
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y
