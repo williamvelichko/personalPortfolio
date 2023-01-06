@@ -12,31 +12,32 @@ const style = {
     fontFamily: "oswald",
     width: "30%",
     display: "flex",
-    marginLeft: "20px",
+    margin: "0px 0px 0px 30px",
     fontSize: "3rem",
-    margin: "0",
   },
   contact: {
     textDecoration: "none",
     display: "flex",
     justifyContent: "center",
-    color: "#FFFFFF",
+    color: "#000000",
     width: "20%",
     padding: "5px",
     fontSize: "1.5rem",
     border: "2px solid black",
-    boxShadow:
-      "5px 5px 0 black -5px -5px 0 black -5px 5px 0 black 5px -5px 0 black",
+    backgroundColor: "#FFFFFF",
     transition: "500ms ease-in-out",
-    hover: {
-      boxShadow: "20px 5px 0 black, -20px -5px 0 black",
-    },
+    margin: "10px 0px 0px 30px",
+    // hover: {
+    //   boxShadow: "20px 5px 0 black, -20px -5px 0 black",
+    // },
   },
+
   p: {
     display: "flex",
     color: "#FFFFFF",
     width: "70%",
     margin: "auto",
+    marginTop: "20px",
   },
 };
 
@@ -47,7 +48,11 @@ function LandingPage() {
         <h1 style={style.title}>Hello,</h1>
         <h1 style={style.title}>I'm William Velichko</h1>
         <h1 style={style.title}>a web developer</h1>
-        <Link style={style.contact} to="/contact">
+        <Link
+          onMouseOver={style.contact.hover}
+          style={style.contact}
+          to="/contact"
+        >
           Contact
         </Link>
       </div>
