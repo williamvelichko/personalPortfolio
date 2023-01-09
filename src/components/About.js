@@ -13,6 +13,7 @@ function About() {
   return (
     <div className="container">
       <h1 style={style.title}>Who Am I?</h1>
+      <h2>william velichko</h2>
       <div className="description_container">
         <p style={style.p}>
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
