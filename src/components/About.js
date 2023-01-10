@@ -1,21 +1,22 @@
 import React from "react";
-
-const style = {
-  title: {
-    color: "#FFFFFF",
-  },
-  p: {
-    color: "#FFFFFF",
-  },
-};
+import { Link } from "react-router-dom";
+import "../Styling/About.css";
+// const style = {
+//   title: {
+//     color: "#FFFFFF",
+//   },
+//   p: {
+//     color: "#FFFFFF",
+//   },
+// };
 
 function About() {
   return (
     <div className="container">
-      <h1 style={style.title}>Who Am I?</h1>
-      <h2>william velichko</h2>
+      <h1>Who Am I?</h1>
+
       <div className="description_container">
-        <p style={style.p}>
+        <p>
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
           archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
           las industrias desde el año 1500, cuando un impresor (N. del T.
@@ -28,6 +29,9 @@ function About() {
           recientemente con software de autoedición, como por ejemplo Aldus
           PageMaker, el cual incluye versiones de Lorem Ipsum.
         </p>
+        <Link to="/contact" className="link">
+          <h5>I would love to get to know you more</h5>
+        </Link>
       </div>
     </div>
   );
