@@ -8,16 +8,23 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-top: 100px;
+  height: 100%;
 }
 .description p {
-  font-size: small;
-  width: 80%;
+  font-size: 1.4rem;
+  font-family: "Rubik";
+  width: 90%;
   margin: auto;
+  height: 100%;
+  margin-top: 50px;
+  line-height: 30px;
 }
 .skills {
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-top: 100px;
 }
 .skills h3 {
   color: #ffffff;
@@ -26,6 +33,9 @@
 h2 {
   color: #ffffff;
   font-family: "oswald";
+  font-size: 3rem;
+  width: 90%;
+  margin: auto;
 }
 .progress {
   display: flex;
@@ -34,9 +44,12 @@ h2 {
 }
 .w3-light-grey {
   width: 80%;
-  background-color: lightgray;
+  background-color: darkgray;
+  height: 20%;
+  margin-right: 15px;
 }
 .w3-green {
   background-color: green;
   color: #ffffff;
+  height: 100%;
 }

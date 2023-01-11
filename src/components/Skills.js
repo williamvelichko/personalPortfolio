@@ -24,7 +24,7 @@ function Skills() {
           <h3>FrontEnd</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "80%" }}>
-              80%
+              {/* 80% */}
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ function Skills() {
           <h3>BackEnd</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "60%" }}>
-              60%
+              {/* 60% */}
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ function Skills() {
           <h3>ReactJs</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "80%" }}>
-              80%
+              {/* 80% */}
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ function Skills() {
           <h3>JavaScript</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "85%" }}>
-              85%
+              {/* 85% */}
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ function Skills() {
           <h3>TypeScipt</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "30%" }}>
-              30%
+              {/* 30 */}
             </div>
           </div>
         </div>

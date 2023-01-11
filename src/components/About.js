@@ -13,8 +13,9 @@ import "../Styling/About.css";
 function About() {
   return (
     <div className="container">
-      <h1>Who Am I?</h1>
-
+      <div className="title">
+        <h1>Who Am I?</h1>
+      </div>
       <div className="description_container">
         <p>
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
