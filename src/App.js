@@ -12,11 +12,15 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div
-      style={{ display: "flex", flexDirection: "row", height: "100vh" }}
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        height: "100vh",
+      }}
       className="App"
     >
       <SideBar />
-      <div className="route_container">
+      <div style={{ width: "90%" }} className="route_container">
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />

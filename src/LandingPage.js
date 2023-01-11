@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const style = {
   container: {
     display: "flex",
-    width: "80%",
+    //width: "70%",
     //height: "500vh",
   },
   title: {

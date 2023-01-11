@@ -9,7 +9,7 @@ const style = {
     backgroundColor: "#343a40",
     justifyContent: "space-between",
     height: "100%",
-    width: "30%",
+    width: "10%",
     margin: 0,
     position: "-webkit-sticky",
     position: "sticky",
@@ -54,7 +54,12 @@ function SideBar() {
   return (
     <div style={style.mainContainer}>
       <div style={style.logo}>
-        <h3>WV</h3>
+        <Link
+          style={{ textDecoration: "none", color: "#FFFFFF" }}
+          to="/landingpage"
+        >
+          <h3>WV</h3>
+        </Link>
         <h5>William Velichko</h5>
       </div>
       <div style={style.nav}>

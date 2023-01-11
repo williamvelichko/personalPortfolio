@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.description p {
+  font-size: small;
+  width: 80%;
+  margin: auto;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.skills h3 {
+  color: #ffffff;
+  width: 20%;
+}
+h2 {
+  color: #ffffff;
+  font-family: "oswald";
+}
+.progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.w3-light-grey {
+  width: 80%;
+  background-color: lightgray;
+}
+.w3-green {
+  background-color: green;
+  color: #ffffff;
+}
