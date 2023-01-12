@@ -4,7 +4,27 @@
 }
 .work_container {
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.company {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 2px solid black;
+  align-content: center;
+  padding: 10px;
+}
+.company h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
 .projects_container {
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
