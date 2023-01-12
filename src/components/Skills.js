@@ -2,7 +2,10 @@ import React from "react";
 import "../Styling/Skills.css";
 function Skills() {
   return (
-    <div className="container">
+    <div
+      // style={{ display: "flex", flexDirection: "row", width: "100%" }}
+      className="container"
+    >
       <div className="description">
         <h2>My Skills</h2>
         <p>

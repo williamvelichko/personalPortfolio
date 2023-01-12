@@ -1,62 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const style = {
-  container: {
-    display: "flex",
-    //width: "70%",
-    //height: "500vh",
-  },
-  title: {
-    color: "#FFFFFF",
-    fontFamily: "oswald",
-    width: "30%",
-    display: "flex",
-    margin: "0px 0px 0px 30px",
-    fontSize: "3rem",
-  },
-  contact: {
-    textDecoration: "none",
-    display: "flex",
-    justifyContent: "center",
-    color: "#000000",
-    width: "20%",
-    padding: "5px",
-    fontSize: "1.5rem",
-    border: "2px solid black",
-    backgroundColor: "#FFFFFF",
-    transition: "500ms ease-in-out",
-    margin: "10px 0px 0px 30px",
-    // hover: {
-    //   boxShadow: "20px 5px 0 black, -20px -5px 0 black",
-    // },
-  },
-
-  p: {
-    display: "flex",
-    color: "#FFFFFF",
-    width: "70%",
-    margin: "auto",
-    marginTop: "20px",
-  },
-};
+import "./Styling/LandingPage.css";
 
 function LandingPage() {
   return (
-    <div styles={style.container}>
+    <div className="container">
       <div>
-        <h1 style={style.title}>Hello,</h1>
-        <h1 style={style.title}>I'm William Velichko</h1>
-        <h1 style={style.title}>a web developer</h1>
-        <Link
-          onMouseOver={style.contact.hover}
-          style={style.contact}
-          to="/contact"
-        >
+        <h1 className="title">Hello,</h1>
+        <h1 className="title">I'm William Velichko</h1>
+        <h1 className="title">a web developer</h1>
+        <Link className="contact" to="/contact">
           Contact
         </Link>
       </div>
-      <p style={style.p}>
+      <p>
         Lorem Ipsum es simplemente el texto de relleno de las imprentas y
         archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
         las industrias desde el año 1500, cuando un impresor (N. del T. persona

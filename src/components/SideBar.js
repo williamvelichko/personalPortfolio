@@ -8,7 +8,7 @@ const style = {
     textAlign: "center",
     backgroundColor: "#343a40",
     justifyContent: "space-between",
-    height: "100%",
+    height: "100vh",
     width: "10%",
     margin: 0,
     position: "-webkit-sticky",
@@ -21,6 +21,7 @@ const style = {
     justifyContent: "flex-start",
     color: "#FFFFFF",
     backgroundColor: "#343a40",
+
     //border: "1px solid red",
     height: "20%",
   },
@@ -55,7 +56,7 @@ function SideBar() {
     <div style={style.mainContainer}>
       <div style={style.logo}>
         <Link
-          style={{ textDecoration: "none", color: "#FFFFFF" }}
+          style={{ textDecoration: "none", color: "#FFFFFF", fontSize: "2rem" }}
           to="/landingpage"
         >
           <h3>WV</h3>

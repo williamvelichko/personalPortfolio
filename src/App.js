@@ -15,22 +15,22 @@ function App() {
       style={{
         display: "flex",
         flexDirection: "row",
-        height: "100vh",
+        height: "100%",
       }}
       className="App"
     >
       <SideBar />
-      <div style={{ width: "90%" }} className="route_container">
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/landingpage" element={<LandingPage />} />
-          <Route path="/" element={<LandingPage />} />
-        </Routes>
-      </div>
+      {/* <div style={{ width: "90%" }} className="route_container"> */}
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/landingpage" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+      {/* </div> */}
     </div>
   );
 }
