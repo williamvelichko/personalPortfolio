@@ -69,9 +69,9 @@ function SideBar() {
         <Link style={style.link} className="link" to="/skills">
           Skills
         </Link>
-        <Link style={style.link} className="link" to="/projects">
+        {/* <Link style={style.link} className="link" to="/projects">
           Projects
-        </Link>
+        </Link> */}
         <Link style={style.link} className="link" to="/work">
           Work
         </Link>
