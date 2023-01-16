@@ -23,14 +23,16 @@ function Contact() {
         "service_421yl7l",
         "template_l39ih65",
         form.current,
-        "YOUR_USER_ID"
+        "CXC1LgWkSSiP7QhE0"
       )
       .then(
         (result) => {
           console.log(result.text);
+          console.log("success");
         },
         (error) => {
           console.log(error.text);
+          console.log("fail");
         }
       );
   };
