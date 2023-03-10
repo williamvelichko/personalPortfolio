@@ -28,3 +28,29 @@
   align-items: center;
   margin-top: 50px;
 }
+.projects {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Iframe_BusyBucket {
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  border: 2px solid black;
+}
+.singleProject {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 2px solid black;
+  align-content: center;
+  padding: 10px;
+}
+.Iframe_MojoPlanner {
+  display: flex;
+  justify-content: center;
+}
