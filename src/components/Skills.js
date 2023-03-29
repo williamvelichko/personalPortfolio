@@ -2,10 +2,7 @@ import React from "react";
 import "../Styling/Skills.css";
 function Skills() {
   return (
-    <div
-      // style={{ display: "flex", flexDirection: "row", width: "100%" }}
-      className="container"
-    >
+    <div className="container">
       <div className="description">
         <h2>My Skills</h2>
         <p>
@@ -24,42 +21,42 @@ function Skills() {
       </div>
       <div className="skills">
         <div className="progress">
-          <h3>FrontEnd</h3>
+          <h3>FrontEnd:</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "80%" }}>
-              {/* 80% */}
+              80%
             </div>
           </div>
         </div>
         <div className="progress">
-          <h3>BackEnd</h3>
+          <h3>BackEnd:</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "60%" }}>
-              {/* 60% */}
+              60%
             </div>
           </div>
         </div>
         <div className="progress">
-          <h3>ReactJs</h3>
+          <h3>ReactJS:</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "80%" }}>
-              {/* 80% */}
+              80%
             </div>
           </div>
         </div>
         <div className="progress">
-          <h3>JavaScript</h3>
+          <h3>JavaScript:</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "85%" }}>
-              {/* 85% */}
+              85%
             </div>
           </div>
         </div>
         <div className="progress">
-          <h3>TypeScipt</h3>
+          <h3>TypeScript:</h3>
           <div className="w3-light-grey">
             <div className="w3-green" style={{ width: "30%" }}>
-              {/* 30 */}
+              30%
             </div>
           </div>
         </div>
