@@ -6,17 +6,19 @@ function Skills() {
       <div className="description">
         <h2>My Skills</h2>
         <p>
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-          archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-          las industrias desde el año 1500, cuando un impresor (N. del T.
-          persona que se dedica a la imprenta) desconocido usó una galería de
-          textos y los mezcló de tal manera que logró hacer un libro de textos
-          especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como
-          texto de relleno en documentos electrónicos, quedando esencialmente
-          igual al original. Fue popularizado en los 60s con la creación de las
-          hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
-          recientemente con software de autoedición, como por ejemplo Aldus
-          PageMaker, el cual incluye versiones de Lorem Ipsum.
+          As a full stack web developer with experience building web
+          applications using technologies such as JavaScript, TypeScript, HTML,
+          CSS, ReactJS, NodeJS, KnexJS, MaterialUI, and Styled Components, I
+          possess a comprehensive set of skills that are highly valued in the
+          modern tech industry. My expertise in front-end technologies like
+          ReactJS, combined with my proficiency in back-end technologies such as
+          NodeJS and KnexJS, enable me to develop robust and efficient web
+          applications from start to finish. Additionally, my experience with
+          popular UI libraries such as MaterialUI and Styled Components enables
+          me to create visually appealing and user-friendly web interfaces that
+          enhance the overall user experience. Overall, my skills as a full
+          stack web developer make me a valuable asset to any tech team seeking
+          to build and maintain high-quality web applications.
         </p>
       </div>
       <div className="skills">

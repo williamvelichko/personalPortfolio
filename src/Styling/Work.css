@@ -62,3 +62,8 @@ iframe {
 .container_title h3 {
   font-size: 1.9rem;
 }
+img {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+}

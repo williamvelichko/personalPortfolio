@@ -8,6 +8,9 @@ function About() {
       <div className="title">
         <h1>Who Am I?</h1>
       </div>
+      <div className="img_div">
+        <img src={require("../Images/IMG_1697.JPG")} />
+      </div>
       <div className="description_container">
         <p>
           I am currently a Full Stack Web developer who enjoys writing code and
