@@ -54,3 +54,11 @@ iframe {
   display: flex;
   justify-content: center;
 }
+.container_title {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.container_title h3 {
+  font-size: 1.9rem;
+}
