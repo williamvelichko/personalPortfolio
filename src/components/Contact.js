@@ -38,7 +38,7 @@ function Contact() {
   };
 
   return (
-    <div className="container">
+    <div className="contact_container">
       <h2>Contact</h2>
       <div className="form_container">
         <form className="form" ref={form} onSubmit={sendEmail}>

@@ -5,27 +5,52 @@ import "./Styling/LandingPage.css";
 function LandingPage() {
   return (
     <div className="container">
-      <div>
-        <h1 className="title">Hello,</h1>
-        <h1 className="title">I'm William Velichko</h1>
-        <h1 className="title">a web developer</h1>
+      <div className="title">
+        <h2>Hello 👋 I'm</h2>
+        <section className="animation">
+          <div className="first">
+            <div>William Velichko</div>
+          </div>
+          <div className="second">
+            <div>Software Engineer</div>
+          </div>
+          <div className="third">
+            <div>FullStack Developer</div>
+          </div>
+        </section>
+      </div>
+
+      <div className="paragraph">
+        <p>
+          I am currently a Full Stack Web developer who enjoys writing code and
+          creating applications that provides advance solutions and improvements
+          for daily activities. I am a former house renovator and cabinet
+          installer with a variety of mechanical trade experiences and talents!
+          I have a passion for staying active both mentally and physically. I am
+          an athlete and I play different sports including volleyball,
+          basketball, and soccer. I also like music as I play clarinet and I am
+          a choir conductor. My birthplace is United States and I speak fluent
+          Russian and English. I had to make a big change recently from working
+          outdoors and doing physical labor to remain indoors while pursuing
+          professional development goals, learning, and creating web
+          applications. I have jumped into the tech industry because this was an
+          opportunity I couldn't resist, and I love to face challenges and
+          discover new opportunities where I can both contribute value and
+          learn. I'm intrigued with the diversity and profound impact related to
+          working within software engineering and the web development industry.
+          Looking forward to discovering my next role and professional
+          adventure!
+        </p>
+      </div>
+      <div className="contact_button">
         <Link className="contact" to="/contact">
           Contact
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </Link>
       </div>
-      <p>
-        Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-        las industrias desde el año 1500, cuando un impresor (N. del T. persona
-        que se dedica a la imprenta) desconocido usó una galería de textos y los
-        mezcló de tal manera que logró hacer un libro de textos especimen. No
-        sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno
-        en documentos electrónicos, quedando esencialmente igual al original.
-        Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-        cuales contenian pasajes de Lorem Ipsum, y más recientemente con
-        software de autoedición, como por ejemplo Aldus PageMaker, el cual
-        incluye versiones de Lorem Ipsum.
-      </p>
     </div>
   );
 }

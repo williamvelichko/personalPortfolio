@@ -2,30 +2,88 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
+  justify-content: space-evenly;
 }
+
 .title {
-  color: #ffffff;
-  font-family: "oswald";
-  width: 30%;
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
   display: flex;
-  margin: 0px 0px 0px 30px;
-  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
 }
-.contact {
-  text-decoration: none;
+.title h2 {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+  margin-right: 5px;
+}
+.animation {
+  height: 50px;
+  overflow: hidden;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color: goldenrod;
+}
+.second div {
+  background-color: goldenrod;
+}
+.third div {
+  background-color: goldenrod;
+}
+.fourth div {
+  background-color: goldenrod;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.contact_button {
   display: flex;
   justify-content: center;
-  color: #000000;
-  width: 20%;
-  padding: 5px;
-  font-size: 1.5rem;
-  border: 2px solid black;
-  background-color: #ffffff;
-  transition: 500ms ease-in-out;
-  margin: 10px 0px 0px 30px;
-  /* // hover: {
-    //   boxShadow: "20px 5px 0 black, -20px -5px 0 black",
-    // }, */
 }
 
 p {
@@ -34,4 +92,65 @@ p {
   width: 70%;
   margin: auto;
   margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px dashed goldenrod;
+}
+
+.contact {
+  --c: goldenrod;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.contact span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+  border: none;
+}
+
+.contact:hover {
+  color: black;
+}
+
+.contact:hover span {
+  transform: translateY(0) scale(2);
+}
+.contact span:nth-child(1) {
+  --n: 1;
+}
+
+.contact span:nth-child(2) {
+  --n: 2;
+}
+
+.contact span:nth-child(3) {
+  --n: 3;
+}
+.contact span:nth-child(4) {
+  --n: 4;
 }
