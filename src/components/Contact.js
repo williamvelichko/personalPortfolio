@@ -38,8 +38,10 @@ function Contact() {
   };
 
   return (
-    <div className="contact_container">
-      <h2>Contact</h2>
+    <div className="contactForm_container">
+      <div className="contactForm_title">
+        <h2>Contact Me</h2>
+      </div>
       <div className="form_container">
         <form className="form" ref={form} onSubmit={sendEmail}>
           <input

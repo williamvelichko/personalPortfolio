@@ -6,21 +6,26 @@ function LandingPage() {
   return (
     <div className="container">
       <div className="title">
-        <h2>Hello 👋 I'm</h2>
-        <section className="animation">
-          <div className="first">
-            <div>William Velichko</div>
-          </div>
-          <div className="second">
-            <div>Software Engineer</div>
-          </div>
-          <div className="third">
-            <div>FullStack Developer</div>
-          </div>
-        </section>
+        <div className="hello_container">
+          <h2>Hello 👋 I'm</h2>
+          <section className="animation">
+            <div className="first">
+              <div>William Velichko</div>
+            </div>
+            <div className="second">
+              <div>Software Engineer</div>
+            </div>
+            <div className="third">
+              <div>FullStack Developer</div>
+            </div>
+          </section>
+        </div>
+        <p>
+          <em>Get To Know Me</em>
+        </p>
       </div>
 
-      <div className="paragraph">
+      {/* <div className="paragraph">
         <p>
           I am currently a Full Stack Web developer who enjoys writing code and
           creating applications that provides advance solutions and improvements
@@ -41,7 +46,7 @@ function LandingPage() {
           Looking forward to discovering my next role and professional
           adventure!
         </p>
-      </div>
+      </div> */}
       <div className="contact_button">
         <Link className="contact" to="/contact">
           Contact
