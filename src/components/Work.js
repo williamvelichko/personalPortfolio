@@ -1,22 +1,27 @@
 import React from "react";
 import "../Styling/Work.css";
-import img from "../Images/ScreenShot.png";
+
 function Work() {
   return (
-    <div className="container">
+    <div className="work_main_container">
       <div className="work_container">
-        <div className="container_title">
+        <div className="work_title">
           <h3>Where I worked</h3>
         </div>
-        <div className="company">
+        <div className="work_company">
           <h3>Busy Buccket:</h3>
-          <div className="Iframe_BusyBucket">
+          <div className="img_container">
+            <a target="_blank" href="https://www.busybucket.io/">
+              <img src={require("../Images/ScreenShot2.png")} />
+            </a>
+          </div>
+          {/* <div className="Iframe_BusyBucket">
             <iframe
               src="https://www.busybucket.io/"
               width={"800px"}
               height={"500px"}
             ></iframe>
-          </div>
+          </div> */}
           <ul>
             <li>
               <p>
@@ -60,7 +65,11 @@ function Work() {
           </div>
           <div className="singleProject">
             <h3>MojoPlanner:</h3>
-            <img src={require("../Images/ScreenShot.png")} />
+            <div className="img_container">
+              <a target="_blank" href="https://www.mojoplanning.com/">
+                <img src={require("../Images/ScreenShot.png")} />
+              </a>
+            </div>
             {/* <div className="Iframe_MojoPlanner">
               <iframe
                 src="https://www.mojoplanning.com/"

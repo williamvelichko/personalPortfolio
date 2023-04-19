@@ -25,7 +25,7 @@
   text-align: center;
   width: 100%;
 }
-p {
+.about_description_container p {
   color: #ffffff;
   line-height: 30px;
   width: 90%;
@@ -45,12 +45,12 @@ p {
   transition: background-color 0.9s ease;
 }
 
-.img_div {
+.about_img_div {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-img {
+.about_img_div img {
   object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

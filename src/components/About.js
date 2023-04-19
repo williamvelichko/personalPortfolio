@@ -8,7 +8,7 @@ function About() {
       <div className="about_title">
         <h1>Who Am I?</h1>
       </div>
-      <div className="img_div">
+      <div className="about_img_div">
         <img src={require("../Images/IMG_1697.JPG")} />
       </div>
       <div className="about_description_container">
