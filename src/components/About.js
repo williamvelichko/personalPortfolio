@@ -4,14 +4,14 @@ import "../Styling/About.css";
 
 function About() {
   return (
-    <div className="container">
-      <div className="title">
+    <div className="about_container">
+      <div className="about_title">
         <h1>Who Am I?</h1>
       </div>
       <div className="img_div">
         <img src={require("../Images/IMG_1697.JPG")} />
       </div>
-      <div className="description_container">
+      <div className="about_description_container">
         <p>
           I am currently a Full Stack Web developer who enjoys writing code and
           creating applications that provides advance solutions and improvements
@@ -30,7 +30,7 @@ function About() {
           learn. I'm intrigued with the diversity and profound impact related to
           working within software engineering and the web development industry.
         </p>
-        <Link to="/contact" className="link">
+        <Link to="/contact" className="about_link">
           <h5>I would love to get to know you more</h5>
         </Link>
       </div>
