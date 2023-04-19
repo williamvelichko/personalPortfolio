@@ -15,13 +15,6 @@ function Work() {
               <img src={require("../Images/ScreenShot2.png")} />
             </a>
           </div>
-          {/* <div className="Iframe_BusyBucket">
-            <iframe
-              src="https://www.busybucket.io/"
-              width={"800px"}
-              height={"500px"}
-            ></iframe>
-          </div> */}
           <ul>
             <li>
               <p>
@@ -70,13 +63,6 @@ function Work() {
                 <img src={require("../Images/ScreenShot.png")} />
               </a>
             </div>
-            {/* <div className="Iframe_MojoPlanner">
-              <iframe
-                src="https://www.mojoplanning.com/"
-                width={800}
-                height={500}
-              ></iframe>
-            </div> */}
             <ul>
               <li>
                 <p>
