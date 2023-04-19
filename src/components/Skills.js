@@ -2,9 +2,11 @@ import React from "react";
 import "../Styling/Skills.css";
 function Skills() {
   return (
-    <div className="container">
-      <div className="description">
-        <h2>My Skills</h2>
+    <div className="skills_container">
+      <div className="skills_description">
+        <div className="skills_title">
+          <h2>My Skills</h2>
+        </div>
         <p>
           As a full stack web developer with experience building web
           applications using technologies such as JavaScript, TypeScript, HTML,

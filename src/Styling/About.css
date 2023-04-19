@@ -41,6 +41,8 @@
   color: #ffffff;
   line-height: 30px;
   width: 90%;
+  font-size: 1.4rem;
+  font-family: "Rubik";
 }
 .about_link {
   text-decoration: none;
