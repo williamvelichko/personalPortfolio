@@ -6,10 +6,10 @@ function Work() {
     <div className="work_main_container">
       <div className="work_container">
         <div className="work_title">
-          <h3>Where I worked</h3>
+          <h1>Where I worked</h1>
         </div>
         <div className="work_company">
-          <h3>Busy Buccket:</h3>
+          <h5>Busy Buccket</h5>
           <div className="img_container">
             <a target="_blank" href="https://www.busybucket.io/">
               <img src={require("../Images/ScreenShot2.png")} />
@@ -53,11 +53,11 @@ function Work() {
       </div>
       <div className="projects_container">
         <div className="projects">
-          <div className="container_title">
-            <h3>Some things i built</h3>
+          <div className="work_title">
+            <h1>Some things i built</h1>
           </div>
           <div className="singleProject">
-            <h3>MojoPlanner:</h3>
+            <h5>MojoPlanner</h5>
             <div className="img_container">
               <a target="_blank" href="https://www.mojoplanning.com/">
                 <img src={require("../Images/ScreenShot.png")} />

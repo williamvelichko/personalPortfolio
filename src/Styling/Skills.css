@@ -3,18 +3,18 @@
   flex-direction: column;
   width: 100%;
 }
-
+/* .skills_container * {
+  border: 1px solid red;
+} */
 .skills_description {
   display: flex;
   color: #ffffff;
   flex-direction: column;
-  /* text-align: center; */
   width: 100%;
-  margin-top: 30px;
   height: 100%;
 }
-.skills_description p {
-  font-size: 1.4rem;
+.skills_paragraph {
+  font-size: 1.2rem;
   font-family: "Rubik";
   width: 80%;
   margin: auto;
@@ -29,12 +29,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-}
-.skills_title h2 {
+  font-size: 1.8rem;
   color: #ffffff;
-  font-family: "oswald";
-  font-size: 3rem;
-  margin: auto;
   text-transform: uppercase;
   font-weight: 500;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
@@ -51,6 +47,7 @@
   width: 80%;
   margin: auto;
   margin-top: 70px;
+  margin-bottom: 50px;
 }
 .skills h3 {
   color: #ffffff;

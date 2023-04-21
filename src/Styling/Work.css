@@ -13,8 +13,13 @@
   align-items: center;
 }
 .work_main_container p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Rubik";
+}
+.work_main_container h5 {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 15px;
 }
 .work_company {
   display: flex;
@@ -23,10 +28,6 @@
   border: 2px dashed #ffd60a;
   align-content: center;
   padding: 50px;
-}
-.work_company h5 {
-  font-size: 1rem;
-  margin: 0;
 }
 
 .projects_container {
@@ -53,12 +54,15 @@
 }
 
 .work_title {
-  width: 30%;
+  width: 50%;
   display: flex;
   justify-content: center;
 }
-.work_main_container h3 {
-  font-size: 3rem;
+.work_main_container .work_title {
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
@@ -86,8 +90,8 @@
   transition: 1s ease;
 }
 .work_main_container img:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
   transition: 1s ease;
 }
