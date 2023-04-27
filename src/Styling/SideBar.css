@@ -2,21 +2,46 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #343a40;
   justify-content: space-between;
   height: 100vh;
   width: 10%;
   margin: 0;
   position: sticky;
   top: 0;
+  color: goldenrod;
 }
+/* .sideBar_container * {
+  border: 1px solid red;
+} */
 .sideBar_logo {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  color: #ffffff;
-  background-color: black;
+  justify-content: space-around;
 }
+/* .logo_link {
+  text-decoration: none;
+  color: goldenrod;
+} */
+.logo_link {
+  text-decoration: none;
+  color: #000814;
+  background-color: goldenrod; /* Change this to the color you prefer */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-w,
+.letter-v {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: goldenrod;
+}
+
 .sideBar_logo h5 {
   margin: 0;
 }
@@ -24,23 +49,21 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-top: 1 solid #6c757d;
+
   justify-content: space-evenly;
-  color: #ffffff;
+  color: goldenrod;
   height: 35%;
 }
 
 .sideBar_container .link {
   display: flex;
+  justify-content: center;
   text-decoration: none;
-  color: #ffffff;
+  color: goldenrod;
   margin: 0;
+  border: 2px solid goldenrod;
 }
-.logo_link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.4rem;
-}
+
 .sideBar_media {
-  color: #ffffff;
+  /* color: #ffffff; */
 }
