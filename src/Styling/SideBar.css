@@ -19,6 +19,11 @@
 
 .logo_link {
   text-decoration: none;
+}
+
+.logo_link .letters {
+  font-size: 3rem;
+  text-decoration: none;
   color: #000814;
   background-color: goldenrod; /* Change this to the color you prefer */
   width: 120px;
@@ -28,14 +33,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  transition: all 0.5s ease-out;
 }
-
-.letter-w,
-.letter-v {
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  background-color: goldenrod;
+.logo_link .letters:hover {
+  color: goldenrod;
+  background-color: #000814;
 }
 
 .sideBar_logo h5 {
