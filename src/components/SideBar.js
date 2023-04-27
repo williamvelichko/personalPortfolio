@@ -4,7 +4,7 @@ import "../Styling/SideBar.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
+
 function SideBar() {
   return (
     <div className="sideBar_container">
@@ -30,18 +30,22 @@ function SideBar() {
         </Link>
       </div>
       <div className="sideBar_media">
-        <p>
-          <TwitterIcon />
-        </p>
-        <p>
-          <InstagramIcon />
-        </p>
-        <p>
-          <LinkedInIcon />
-        </p>
-        <p>
-          <GitHubIcon />
-        </p>
+        <a href="https://twitter.com/WilliamVelichko">
+          <p>
+            <TwitterIcon />
+          </p>
+        </a>
+
+        <a href="https://github.com/williamvelichko">
+          <p>
+            <GitHubIcon />
+          </p>
+        </a>
+        <a href="https://www.linkedin.com/in/williamvelichko/">
+          <p>
+            <LinkedInIcon />
+          </p>
+        </a>
       </div>
     </div>
   );

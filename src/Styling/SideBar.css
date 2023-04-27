@@ -10,18 +10,13 @@
   top: 0;
   color: goldenrod;
 }
-/* .sideBar_container * {
-  border: 1px solid red;
-} */
+
 .sideBar_logo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-/* .logo_link {
-  text-decoration: none;
-  color: goldenrod;
-} */
+
 .logo_link {
   text-decoration: none;
   color: #000814;
@@ -32,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .letter-w,
@@ -49,21 +45,42 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
   justify-content: space-evenly;
   color: goldenrod;
   height: 35%;
+  border-bottom: 0.5px solid goldenrod;
 }
 
 .sideBar_container .link {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  align-items: center;
   color: goldenrod;
+  height: 25%;
   margin: 0;
-  border: 2px solid goldenrod;
+  border-top: 0.5px solid goldenrod;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-.sideBar_media {
-  /* color: #ffffff; */
+.sideBar_nav p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, goldenrod 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.sideBar_nav p:hover {
+  background-position: left bottom;
+  color: black;
+}
+
+.sideBar_media a {
+  text-decoration: none;
+  color: goldenrod;
 }
