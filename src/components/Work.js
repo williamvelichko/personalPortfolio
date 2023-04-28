@@ -9,13 +9,13 @@ function Work() {
           <h1>Where I worked</h1>
         </div>
         <div className="work_company">
-          <h5>Busy Buccket</h5>
           <div className="img_container">
             <a target="_blank" href="https://www.busybucket.io/">
               <img src={require("../Images/ScreenShot2.png")} />
+              {/* <h5>BusyBucket</h5> */}
             </a>
           </div>
-          <ul>
+          {/* <ul>
             <li>
               <p>
                 Developed and maintained the application using technologies such
@@ -48,22 +48,32 @@ function Work() {
                 code
               </p>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div className="projects_container">
-        <div className="projects">
-          <div className="work_title">
-            <h1>Some things i built</h1>
+        {/* <div className="projects"> */}
+        <div className="work_title">
+          <h1>Some things i built</h1>
+        </div>
+        <div className="singleProject">
+          {/* <h5>MojoPlanner</h5> */}
+          <div className="img_container">
+            <a target="_blank" href="https://www.mojoplanning.com/">
+              <img src={require("../Images/ScreenShot.png")} />
+              {/* <h5>MojoPlanner</h5> */}
+            </a>
           </div>
-          <div className="singleProject">
-            <h5>MojoPlanner</h5>
-            <div className="img_container">
-              <a target="_blank" href="https://www.mojoplanning.com/">
-                <img src={require("../Images/ScreenShot.png")} />
-              </a>
-            </div>
-            <ul>
+          <div className="img_container">
+            <a
+              target="_blank"
+              href="https://sac-fishingstore.herokuapp.com/homepage"
+            >
+              <img src={require("../Images/ScreenShot3.png")} />
+              {/* <h5>Sac-Fishing</h5> */}
+            </a>
+          </div>
+          {/* <ul>
               <li>
                 <p>
                   Developed full stack web application using Javascript,
@@ -98,9 +108,9 @@ function Work() {
                   a user is using a real email
                 </p>
               </li>
-            </ul>
-          </div>
+            </ul> */}
         </div>
+        {/* </div> */}
       </div>
     </div>
   );
