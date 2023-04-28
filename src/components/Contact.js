@@ -2,6 +2,10 @@ import React, { useState, useRef } from "react";
 import "../Styling/Contact.css";
 import emailjs from "emailjs-com";
 
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import MailIcon from "@mui/icons-material/Mail";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 function Contact() {
   const form = useRef();
 
@@ -39,11 +43,11 @@ function Contact() {
 
   return (
     <div className="contactForm_container">
-      <div className="contactForm_title">
-        <h1>Contact Me</h1>
-      </div>
+      <div className="contactForm_title">{/* <h1>Contact Me</h1> */}</div>
+
       <div className="form_container">
         <form className="form" ref={form} onSubmit={sendEmail}>
+          <h2>Get In Touch</h2>
           <input
             type="name"
             placeholder="name"
@@ -68,6 +72,29 @@ function Contact() {
           ></textarea>
           <button type="submit">Submit</button>
         </form>
+        <div className="contact_media">
+          <h2>Contact Info</h2>
+          <div className="contact_info_div">
+            <div className="contact_media_div">
+              <p className="contact_icons">
+                <LocationOnIcon sx={{ backgroundColor: "#00509d" }} />
+              </p>
+              <p>Sacramento, California</p>
+            </div>
+            <div className="contact_media_div">
+              <p className="contact_icons">
+                <LocalPhoneIcon sx={{ backgroundColor: "#00509d" }} />
+              </p>
+              <p>(916)-882-6630</p>
+            </div>
+            <div className="contact_media_div">
+              <p className="contact_icons">
+                <MailIcon sx={{ backgroundColor: "#00509d" }} />
+              </p>
+              <p>williamvelichko2003@gmail.com</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

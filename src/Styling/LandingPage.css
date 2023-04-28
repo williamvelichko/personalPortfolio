@@ -51,7 +51,7 @@ html {
 }
 .par_element1,
 .par_element2 {
-  color: goldenrod;
+  color: #ffd60a;
   font-size: 0.9rem;
   width: 50%;
 }
@@ -60,7 +60,7 @@ html {
   justify-content: flex-end;
 }
 .par_description {
-  color: #ffd60a;
+  color: goldenrod;
   width: 50%;
   font-size: 1.3rem;
   font-weight: 50;
