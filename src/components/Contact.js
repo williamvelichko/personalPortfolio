@@ -70,7 +70,9 @@ function Contact() {
             value={userInfo.message}
             onChange={handleChange}
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit" className="submit_button">
+            Submit
+          </button>
         </form>
         <div className="contact_media">
           <h2>Contact Info</h2>
