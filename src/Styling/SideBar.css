@@ -14,11 +14,13 @@
 .sideBar_logo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .logo_link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .logo_link .letters {

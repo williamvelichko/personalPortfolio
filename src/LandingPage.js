@@ -32,10 +32,12 @@ function LandingPage() {
             <em>{`<p>`}</em>
           </p>
           <p className="par_description">
-            Get to know me and what I enjoy doing
+            My mind is like an internet browser, 19 tabs open, 3 of them are
+            frozen, ads popping up everywhere, I have no idea where the music is
+            coming from
           </p>
           <p className="par_element2">
-            <em>{`<p>`}</em>
+            <em>{`</p>`}</em>
           </p>
         </div>
         <div className="landing_contact_button">
