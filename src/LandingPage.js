@@ -26,11 +26,18 @@ function LandingPage() {
               </div>
             </section>
           </div>
-          <p>
-            <em>Get To Know Me</em>
+        </div>
+        <div className="landing_html">
+          <p className="par_element1">
+            <em>{`<p>`}</em>
+          </p>
+          <p className="par_description">
+            Get to know me and what I enjoy doing
+          </p>
+          <p className="par_element2">
+            <em>{`<p>`}</em>
           </p>
         </div>
-
         <div className="landing_contact_button">
           <Link className="landing_contact" to="/contact">
             Contact

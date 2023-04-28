@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* min-height: 100vh; */
   justify-content: space-evenly;
+}
+html {
   scroll-behavior: smooth;
 }
 .landing_min {
@@ -12,7 +13,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 80vh;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .landing_title {
@@ -24,6 +25,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Roboto";
+  margin-top: 80px;
 }
 .hello_container {
   width: 100%;
@@ -37,11 +39,34 @@
     0 0 3px rgba(255, 255, 255, 0.3);
   margin-right: 5px;
 }
-.landing_title p {
+.landing_html {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+.landing_html p {
+  color: goldenrod;
+  margin: 0;
+}
+.par_element1,
+.par_element2 {
+  font-size: 0.9rem;
+  width: 35%;
+}
+.par_element2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.par_description {
+  width: 50%;
+  font-size: 1.4rem;
+  font-weight: 50;
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
 }
+
 .landing_animation {
   height: 50px;
   overflow: hidden;
