@@ -3,9 +3,7 @@
   flex-direction: column;
   width: 100%;
 }
-/* .skills_container * {
-  border: 1px solid red;
-} */
+
 .skills_description {
   display: flex;
   color: #ffffff;
@@ -14,15 +12,27 @@
   height: 100%;
 }
 .skills_paragraph {
-  font-size: 1.2rem;
   font-family: "Rubik";
   width: 80%;
   margin: auto;
   height: 100%;
   margin-top: 50px;
   line-height: 30px;
-  border: 2px dashed #ffd60a;
+  border-top: 1px dashed #ffd60a;
+  border-bottom: 1px dashed #ffd60a;
+
   padding: 30px;
+}
+
+.skills_inside_par p {
+  margin: 10px;
+  font-size: 1.2rem;
+  color: goldenrod;
+}
+.skills_par_element {
+  margin: 0;
+  color: #ffd60a;
+  font-size: 1rem;
 }
 
 .skills_title {
@@ -50,7 +60,9 @@
   margin-bottom: 50px;
 }
 .skills h3 {
-  color: #ffffff;
+  color: goldenrod;
+  font-family: "roboto";
+  font-weight: bolder;
   width: 20%;
 }
 .progress {
@@ -60,12 +72,24 @@
 }
 .w3-light-grey {
   width: 80%;
-  background-color: darkgray;
+  background-color: goldenrod;
   height: 30%;
   margin-right: 15px;
+  border-radius: 10px;
 }
 .w3-green {
-  background-color: green;
-  color: #ffffff;
+  background-color: rgb(10, 84, 169);
   height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  animation: 2s ease-out 0s 1 w3-green;
+}
+
+@keyframes w3-green {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -36,9 +36,6 @@
   border-top: 1px dashed #ffd60a;
   border-bottom: 1px dashed #ffd60a;
 }
-/* * {
-  border: 1px solid red;
-} */
 .about_inside_par {
   color: goldenrod;
   margin: 0;
@@ -47,7 +44,7 @@
   font-family: "Rubik";
 }
 .about_inside_par p {
-  margin: 0;
+  margin: 10px;
 }
 
 .about_par_element1,
