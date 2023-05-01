@@ -1,51 +1,60 @@
 import React, { useState, useRef } from "react";
 import "../Styling/Contact.css";
 import emailjs from "emailjs-com";
+import CheckIcon from "@mui/icons-material/Check";
 
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailIcon from "@mui/icons-material/Mail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Margin } from "@mui/icons-material";
 
 function Contact() {
   const form = useRef();
-  console.log(form.current);
-  const [userInfo, SetUserInfo] = useState({
+  const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const [sentEmail, SetSentEmail] = useState("fail");
+  const [sentEmail, setSentEmail] = useState("");
 
   const handleChange = (e) => {
-    SetUserInfo({ ...userInfo, [e.target.name]: e.target.value });
+    setUserInfo({ ...userInfo, [e.target.name]: e.target.value });
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_421yl7l",
-        "template_l39ih65",
-        form.current,
-        "CXC1LgWkSSiP7QhE0"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("success");
-        },
-        (error) => {
-          console.log(error.text);
-          console.log("fail");
-        }
-      );
+    if (userInfo.email === "" || userInfo.message === "") {
+      setSentEmail("Fail");
+    } else {
+      emailjs
+        .sendForm(
+          "service_421yl7l",
+          "template_l39ih65",
+          form.current,
+          "CXC1LgWkSSiP7QhE0"
+        )
+        .then(
+          (result) => {
+            setSentEmail("Sent");
+
+            console.log(result.text);
+            console.log("success");
+          },
+          (error) => {
+            console.log(error.text);
+            console.log("fail");
+          }
+        );
+    }
   };
 
   return (
     <div className="contactForm_container">
-      <div className="contactForm_title">{/* <h1>Contact Me</h1> */}</div>
+      <div className="contactForm_title">
+        <h1>Contact Me</h1>
+      </div>
 
       <div className="form_container">
         <form className="form" ref={form} onSubmit={sendEmail}>
@@ -59,22 +68,36 @@ function Contact() {
           />
           <input
             type="email"
-            placeholder="email"
+            placeholder={sentEmail === "Fail" ? "email required" : "email"}
             name="email"
             value={userInfo.email}
             onChange={handleChange}
+            style={{
+              borderColor: sentEmail === "Fail" && "red",
+            }}
           />
           <textarea
             type="message"
-            placeholder="message"
+            placeholder={sentEmail === "Fail" ? "message required" : "message"}
             name="message"
             rows="8"
             value={userInfo.message}
             onChange={handleChange}
+            style={{
+              borderColor: sentEmail === "Fail" && "red",
+            }}
           ></textarea>
-          <button type="submit" className="submit_button">
-            Submit
-          </button>
+          {sentEmail === "Sent" ? (
+            <div className="sent_email">
+              <p>
+                Success <CheckIcon sx={{ backgroundColor: "green" }} />
+              </p>
+            </div>
+          ) : (
+            <button type="submit" className="submit_button">
+              Submit
+            </button>
+          )}
         </form>
         <div className="contact_media">
           <h2>Contact Info</h2>

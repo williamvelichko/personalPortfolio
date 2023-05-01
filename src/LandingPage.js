@@ -58,6 +58,7 @@ function LandingPage() {
           <ArrowDownwardIcon fontSize="large" />
         </p>
       </div>
+
       <About />
       <Skills />
       <Work />
