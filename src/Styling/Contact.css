@@ -95,6 +95,7 @@
 }
 .form_container form textarea {
   padding: 10px;
+  height: 200px;
   border: 2px solid black;
   background-color: goldenrod;
   color: black;
@@ -119,7 +120,7 @@
   background: linear-gradient(#00509d, #00509d 50%, black 50%, black);
   background-size: 100% 200%;
   /*trasition effect for background*/
-  transition: background 1s;
+  transition: background 0.4s;
 }
 
 .form_container .form button:hover {

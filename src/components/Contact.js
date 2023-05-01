@@ -8,12 +8,14 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function Contact() {
   const form = useRef();
-
+  console.log(form.current);
   const [userInfo, SetUserInfo] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  const [sentEmail, SetSentEmail] = useState("fail");
 
   const handleChange = (e) => {
     SetUserInfo({ ...userInfo, [e.target.name]: e.target.value });
