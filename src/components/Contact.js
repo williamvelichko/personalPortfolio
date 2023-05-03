@@ -8,7 +8,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LoadingClip from "../widgets/LoadingClip";
 
-function Contact() {
+function Contact(props) {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -58,7 +58,7 @@ function Contact() {
         );
     }
   };
-  if (loading) return <LoadingClip />;
+  if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
       <div className="contactForm_container">

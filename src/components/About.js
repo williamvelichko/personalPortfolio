@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../Styling/About.css";
 import LoadingClip from "../widgets/LoadingClip";
 
-function About() {
+function About(props) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function About() {
     }, 1000);
     window.scrollTo(0, 0);
   }, []);
-  if (loading) return <LoadingClip />;
+  if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
       <div className="about_container">

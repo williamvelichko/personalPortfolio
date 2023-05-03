@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styling/Skills.css";
 import LoadingClip from "../widgets/LoadingClip";
-function Skills() {
+function Skills(props) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ function Skills() {
     }, 1000);
     window.scrollTo(0, 0);
   }, []);
-  if (loading) return <LoadingClip />;
+  if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
       <div className="skills_container">

@@ -72,10 +72,10 @@ function LandingPage() {
           </p>
         </div>
 
-        <About />
-        <Skills />
-        <Work />
-        <Contact />
+        <About onLandingPage={true} />
+        <Skills onLandingPage={true} />
+        <Work onLandingPage={true} />
+        <Contact onLandingPage={true} />
       </div>
     );
 }

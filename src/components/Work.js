@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../Styling/Work.css";
 import LoadingClip from "../widgets/LoadingClip";
 
-function Work() {
+function Work(props) {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -11,7 +11,7 @@ function Work() {
     }, 1000);
     window.scrollTo(0, 0);
   }, []);
-  if (loading) return <LoadingClip />;
+  if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
       <div className="work_main_container">

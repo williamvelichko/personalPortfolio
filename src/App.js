@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import SideBar from "./components/SideBar";
 import { Route, Routes } from "react-router-dom";
@@ -20,7 +19,6 @@ function App() {
       className="App"
     >
       <SideBar />
-      {/* <div style={{ width: "90%" }} className="route_container"> */}
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
@@ -30,7 +28,6 @@ function App() {
         <Route path="/landingpage" element={<LandingPage />} />
         <Route path="/" element={<LandingPage />} />
       </Routes>
-      {/* </div> */}
     </div>
   );
 }
