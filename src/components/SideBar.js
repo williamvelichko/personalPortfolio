@@ -4,8 +4,14 @@ import "../Styling/SideBar.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LoadingClip from "../widgets/LoadingClip";
 
 function SideBar() {
+  const onclick = () => {
+    setTimeout(() => {
+      <LoadingClip />;
+    }, 800);
+  };
   return (
     <div className="sideBar_container">
       <div classname="sideBar_logo">
@@ -15,7 +21,7 @@ function SideBar() {
         <h5>William Velichko</h5>
       </div>
       <div className="sideBar_nav">
-        <Link className="link" to="/about ">
+        <Link className="link" to="/about">
           <p>About</p>
         </Link>
         <Link className="link" to="/skills">
