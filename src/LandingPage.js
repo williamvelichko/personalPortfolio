@@ -76,7 +76,6 @@ function LandingPage() {
         <Skills />
         <Work />
         <Contact />
-        <LoadingClip />
       </div>
     );
 }
