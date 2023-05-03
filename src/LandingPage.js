@@ -1,33 +1,83 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Styling/LandingPage.css";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import LoadingClip from "./widgets/LoadingClip";
 
 function LandingPage() {
-  return (
-    <div className="container">
-      <div>
-        <h1 className="title">Hello,</h1>
-        <h1 className="title">I'm William Velichko</h1>
-        <h1 className="title">a web developer</h1>
-        <Link className="contact" to="/contact">
-          Contact
-        </Link>
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    window.scrollTo(0, 0);
+  }, []);
+
+  if (loading) return <LoadingClip />;
+  else
+    return (
+      <div className="landing_container">
+        <div className="landing_min">
+          <div className="landing_title">
+            <div className="hello_container">
+              <h2>Hello 👋 I'm</h2>
+              <section className="landing_animation">
+                <div className="first">
+                  <div>William Velichko</div>
+                </div>
+                <div className="second">
+                  <div>Software Engineer</div>
+                </div>
+                <div className="third">
+                  <div>FullStack Developer</div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div className="landing_html">
+            <p className="par_element1">
+              <em>{`<p>`}</em>
+            </p>
+            <p className="par_description">
+              My mind is like an internet browser, 19 tabs open, 3 of them are
+              frozen, ads popping up everywhere, I have no idea where the music
+              is coming from
+            </p>
+            <p className="par_element2">
+              <em>{`</p>`}</em>
+            </p>
+          </div>
+          <div className="landing_contact_button">
+            <Link className="landing_contact" to="/contact">
+              Contact
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </Link>
+          </div>
+        </div>
+        <div className="landing_scroll">
+          <p>
+            <ArrowDownwardIcon fontSize="large" />
+          </p>
+          <p>
+            <ArrowDownwardIcon fontSize="large" />
+          </p>
+        </div>
+
+        <About onLandingPage={true} />
+        <Skills onLandingPage={true} />
+        <Work onLandingPage={true} />
+        <Contact onLandingPage={true} />
       </div>
-      <p>
-        Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-        las industrias desde el año 1500, cuando un impresor (N. del T. persona
-        que se dedica a la imprenta) desconocido usó una galería de textos y los
-        mezcló de tal manera que logró hacer un libro de textos especimen. No
-        sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno
-        en documentos electrónicos, quedando esencialmente igual al original.
-        Fue popularizado en los 60s con la creación de las hojas "Letraset", las
-        cuales contenian pasajes de Lorem Ipsum, y más recientemente con
-        software de autoedición, como por ejemplo Aldus PageMaker, el cual
-        incluye versiones de Lorem Ipsum.
-      </p>
-    </div>
-  );
+    );
 }
 
 export default LandingPage;

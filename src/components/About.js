@@ -1,41 +1,58 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Styling/About.css";
-// const style = {
-//   title: {
-//     color: "#FFFFFF",
-//   },
-//   p: {
-//     color: "#FFFFFF",
-//   },
-// };
+import LoadingClip from "../widgets/LoadingClip";
 
-function About() {
-  return (
-    <div className="container">
-      <div className="title">
-        <h1>Who Am I?</h1>
+function About(props) {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    window.scrollTo(0, 0);
+  }, []);
+  if (loading && !props.onLandingPage) return <LoadingClip />;
+  else
+    return (
+      <div className="about_container">
+        <div className="about_title">
+          <h1>Who Am I?</h1>
+        </div>
+        <div className="about_img_div">
+          <img src={require("../Images/IMG_1697.JPG")} />
+        </div>
+        <div className="about_description_container">
+          <p className="about_par_element1">
+            <em>{`<p>`}</em>
+          </p>
+          <div className="about_inside_par">
+            <p>
+              I am William Velichko and I am currently a software developer who
+              is passionate about impacting people lifes threw building FrontEnd
+              UI, working with large data, and building API's
+            </p>
+            <p>
+              I love Jesus Christ, sports, Outdoors, Music, and I love
+              communicating and enteracting with others
+            </p>
+            <p>
+              I love to face challenges and discover new opportunities where I
+              can both contribute value and learn. I'm intrigued with the
+              diversity and profound impact related to working within software
+              engineering and the web development industry
+            </p>
+          </div>
+          <p className="about_par_element2">
+            <em>{`</p>`}</em>
+          </p>
+          <Link to="/contact" className="about_link">
+            <h5>I would love to get to know you more</h5>
+          </Link>
+        </div>
       </div>
-      <div className="description_container">
-        <p>
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-          archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
-          las industrias desde el año 1500, cuando un impresor (N. del T.
-          persona que se dedica a la imprenta) desconocido usó una galería de
-          textos y los mezcló de tal manera que logró hacer un libro de textos
-          especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como
-          texto de relleno en documentos electrónicos, quedando esencialmente
-          igual al original. Fue popularizado en los 60s con la creación de las
-          hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más
-          recientemente con software de autoedición, como por ejemplo Aldus
-          PageMaker, el cual incluye versiones de Lorem Ipsum.
-        </p>
-        <Link to="/contact" className="link">
-          <h5>I would love to get to know you more</h5>
-        </Link>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default About;
