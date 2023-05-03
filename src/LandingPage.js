@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Styling/LandingPage.css";
 import About from "./components/About";
@@ -8,6 +8,10 @@ import Contact from "./components/Contact";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 function LandingPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="landing_container">
       <div className="landing_min">

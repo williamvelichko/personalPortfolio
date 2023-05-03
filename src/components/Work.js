@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styling/Work.css";
 
 function Work() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="work_main_container">
       <div className="work_container">

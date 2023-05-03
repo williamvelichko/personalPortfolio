@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../Styling/Contact.css";
 import emailjs from "emailjs-com";
 import CheckIcon from "@mui/icons-material/Check";
@@ -9,6 +9,10 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Margin } from "@mui/icons-material";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const form = useRef();
   const [userInfo, setUserInfo] = useState({
     name: "",
