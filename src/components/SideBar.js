@@ -28,6 +28,13 @@ function SideBar() {
           <p>Contact</p>
         </Link>
       </div>
+
+      <div className="hamburger">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
       <div className="sideBar_media">
         <a href="https://twitter.com/WilliamVelichko">
           <p>

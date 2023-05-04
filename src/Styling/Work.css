@@ -78,9 +78,6 @@
   }
 }
 
-/* * {
-  border: 1px solid red;
-} */
 .img_container {
   display: flex;
   width: 100%;
@@ -114,4 +111,21 @@
   -ms-transform: scale(0.9);
   transform: scale(0.9);
   transition: 1s ease;
+}
+
+@media (max-width: 850px) {
+  .work_company,
+  .singleProject {
+    width: 90%;
+  }
+}
+@media (max-width: 420px) {
+  .work_main_container .work_title {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .work_main_container .img_container img {
+    height: 250px;
+  }
 }
