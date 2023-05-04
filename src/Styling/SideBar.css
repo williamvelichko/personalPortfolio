@@ -8,7 +8,7 @@
   margin: 0;
   position: sticky;
   top: 0;
-  color: goldenrod;
+  color: black;
 }
 
 .sideBar_logo {
@@ -26,8 +26,8 @@
 .logo_link .letters {
   font-size: 3rem;
   text-decoration: none;
-  color: #000814;
-  background-color: goldenrod; /* Change this to the color you prefer */
+  color: #1d63ff;
+  background-color: #ffce32; /* Change this to the color you prefer */
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -38,7 +38,7 @@
   transition: all 0.5s ease-out;
 }
 .logo_link .letters:hover {
-  color: goldenrod;
+  color: #ffce32;
   background-color: #000814;
 }
 
@@ -50,9 +50,9 @@
   flex-direction: column;
   text-align: center;
   justify-content: space-evenly;
-  color: goldenrod;
+  color: black;
   height: 35%;
-  border-bottom: 0.5px solid goldenrod;
+  border-bottom: 0.5px solid #1d63ff;
 }
 
 .sideBar_container .link {
@@ -60,10 +60,10 @@
   justify-content: center;
   text-decoration: none;
   align-items: center;
-  color: goldenrod;
+  color: #1d63ff;
   height: 25%;
   margin: 0;
-  border-top: 0.5px solid goldenrod;
+  border-top: 0.5px solid #1d63ff;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -74,17 +74,17 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, goldenrod 50%, black 50%);
+  background: linear-gradient(to right, #1d63ff 50%, #ffce32 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
 }
 .sideBar_nav p:hover {
   background-position: left bottom;
-  color: black;
+  color: #ffce32;
 }
 
 .sideBar_media a {
   text-decoration: none;
-  color: goldenrod;
+  color: #1d63ff;
 }
