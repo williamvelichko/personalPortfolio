@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 .landing_min {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -25,7 +24,7 @@ html {
   align-items: center;
   justify-content: center;
   font-family: "Roboto";
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .hello_container {
   width: 100%;
@@ -35,6 +34,7 @@ html {
   justify-content: center;
 }
 .landing_title h2 {
+  font-size: 2.5rem;
   text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
     0 0 3px rgba(255, 255, 255, 0.3);
   margin-right: 5px;
@@ -45,6 +45,7 @@ html {
   flex-direction: column;
   align-items: center;
   text-transform: capitalize;
+  line-height: 25px;
 }
 .landing_html p {
   margin: 0;
@@ -75,6 +76,7 @@ html {
 }
 
 .landing_animation > div > div {
+  width: 100%;
   padding: 0.25rem 0.75rem;
   height: 2.81rem;
   margin-bottom: 2.81rem;
@@ -87,15 +89,21 @@ html {
 
 .first div {
   background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .second div {
   background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .third div {
   background-color: goldenrod;
-}
-.fourth div {
-  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes text-animation {
@@ -193,10 +201,6 @@ html {
   --n: 4;
 }
 
-/* scroll down */
-/* * {
-  border: 1px solid red;
-} */
 .landing_scroll {
   display: flex;
   flex-direction: row;
@@ -230,5 +234,59 @@ html {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+@media (max-width: 1300px) {
+  .landing_min {
+    min-height: 70vh;
+  }
+}
+@media (max-width: 850px) {
+  .landing_title {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .landing_title h2 {
+    font-size: 2rem;
+  }
+  .landing_title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .landing_title h2 {
+    font-size: 1.6rem;
+  }
+  .landing_title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .landing_title h2 {
+    font-size: 1.3rem;
+  }
+  .landing_title {
+    font-size: 1rem;
+  }
+  .landing_animation {
+    height: 30px;
+  }
+  .landing_html p {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .landing_contact {
+    width: 11em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
   }
 }

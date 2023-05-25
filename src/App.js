@@ -7,18 +7,14 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import NavBarPopUp from "./widgets/NavBarPopUp";
 
 function App() {
+  console.log(window.innerWidth);
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        height: "100%",
-      }}
-      className="App"
-    >
+    <div className="App">
       <SideBar />
+      <NavBarPopUp />
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />

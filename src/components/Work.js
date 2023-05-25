@@ -38,11 +38,8 @@ function Work(props) {
               </a>
             </div>
             <div className="img_container">
-              <a
-                target="_blank"
-                href="https://sac-fishingstore.herokuapp.com/homepage"
-              >
-                <img src={require("../Images/ScreenShot3.png")} />
+              <a target="_blank" href="https://sac-fishing.vercel.app/">
+                <img src={require("../Images/ScreenShotFishingStore.png")} />
               </a>
             </div>
           </div>

@@ -10,7 +10,6 @@ import LoadingClip from "./widgets/LoadingClip";
 
 function LandingPage() {
   const [loading, setLoading] = useState(false);
-
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

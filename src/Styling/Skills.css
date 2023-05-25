@@ -17,10 +17,9 @@
   margin: auto;
   height: 100%;
   margin-top: 50px;
-  line-height: 30px;
+  line-height: 25px;
   border-top: 1px dashed #ffd60a;
   border-bottom: 1px dashed #ffd60a;
-
   padding: 30px;
 }
 
@@ -70,7 +69,8 @@
 .w3-light-grey {
   width: 80%;
   background-color: goldenrod;
-  height: 30%;
+  /* height: 30%; */
+  height: 2vh;
   margin-right: 15px;
   border-radius: 10px;
 }
@@ -88,5 +88,30 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .progress {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .skills h3 {
+    width: 50%;
+  }
+}
+@media (max-width: 420px) {
+  .skills_title {
+    font-size: 1rem;
+  }
+  .w3-light-grey {
+    height: 1.5vh;
+  }
+  .skills h3 {
+    font-size: 1rem;
+  }
+  .skills_paragraph p {
+    font-size: 1rem;
   }
 }

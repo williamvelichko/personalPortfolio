@@ -34,6 +34,7 @@
   width: 80%;
   border-top: 1px dashed #ffd60a;
   border-bottom: 1px dashed #ffd60a;
+  line-height: 25px;
 }
 .about_inside_par {
   color: goldenrod;
@@ -80,5 +81,31 @@
 }
 .about_img_div img {
   object-fit: contain;
-  width: 350px;
+  /* width: 350px; */
+  width: 85%;
+}
+
+@media (max-width: 800px) {
+  .about_img_div {
+    width: 60%;
+  }
+  .about_img_div img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 420px) {
+  .about_title {
+    font-size: 1rem;
+  }
+  .about_par_element1,
+  .about_par_element2 {
+    font-size: 0.9rem;
+  }
+  .about_inside_par p {
+    font-size: 1rem;
+  }
+  .about_link h5 {
+    font-size: 1rem;
+  }
 }
