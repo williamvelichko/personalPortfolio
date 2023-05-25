@@ -114,8 +114,8 @@ input:-webkit-autofill:active {
 .form_container .form .submit_button {
   width: 40%;
   margin: auto;
-  padding: 13px;
   color: goldenrod;
+  padding: 13px;
   background-color: #00509d;
   border-radius: 50px;
   border: transparent;
@@ -126,6 +126,10 @@ input:-webkit-autofill:active {
   background-size: 100% 200%;
   transition: background 0.4s;
 }
+.submit_button p {
+  background-color: transparent;
+  margin: 0;
+}
 
 .form_container .form button:hover {
   background-position: 100% 100%;
@@ -135,9 +139,21 @@ input:-webkit-autofill:active {
   display: flex;
   justify-content: center;
   background-color: green;
+  border-radius: 50px;
+  border: transparent;
   color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
   width: 40%;
   margin: auto;
+  padding: 13px;
+}
+.sent_email p {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0;
+  background-color: transparent;
 }
 
 @media (max-width: 750px) {
@@ -151,6 +167,9 @@ input:-webkit-autofill:active {
 
 @media (max-width: 420px) {
   .form_container .form .submit_button {
+    width: 70%;
+  }
+  .sent_email {
     width: 70%;
   }
 }

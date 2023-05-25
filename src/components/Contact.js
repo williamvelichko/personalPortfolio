@@ -103,12 +103,12 @@ function Contact(props) {
             {sentEmail === "Sent" ? (
               <div className="sent_email">
                 <p>
-                  Success <CheckIcon sx={{ backgroundColor: "green" }} />
+                  Success <CheckIcon sx={{ backgroundColor: "transparent" }} />
                 </p>
               </div>
             ) : (
               <button type="submit" className="submit_button">
-                Submit
+                <p>Submit</p>
               </button>
             )}
             <div className="contact_media">
