@@ -105,7 +105,7 @@
     display: flex;
     flex-direction: column;
     height: 45vh;
-    border-bottom: 1px solid goldenrod;
+    border-bottom: 1px solid #6acfc7;
   }
   .navbar .nav-container li {
     list-style: none;
@@ -113,38 +113,30 @@
     justify-content: center;
     text-decoration: none;
     align-items: center;
-    color: goldenrod;
+    color: #6acfc7;
     height: 25%;
     margin: 0;
-    border-top: 1px solid goldenrod;
+    border-top: 1px solid #6acfc7;
     font-size: 1rem;
     font-weight: 700;
   }
 
   .navbar .nav-container .link {
     text-decoration: none;
-    color: goldenrod;
+    color: #6acfc7;
     width: 100%;
-
-    /* margin: 0; */
     font-weight: 500;
     font-size: 1.2rem;
-    /* padding: 0.7rem; */
   }
 
   .navbar .menu-items li p {
-    /* margin: 0; */
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(to right, goldenrod 50%, black 50%); */
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
   }
-  /* .navbar .menu-items li p:hover {
-    background-position: left bottom;
-    color: black;
-  } */
+
   .navbar .menu-items .navbar_media {
     display: flex;
     flex-direction: row;
@@ -152,7 +144,7 @@
   }
   .navbar_media a {
     text-decoration: none;
-    color: goldenrod;
+    color: #6acfc7;
   }
 
   .logo {
@@ -162,7 +154,7 @@
     margin-top: 50px;
   }
   .logo h5 {
-    color: goldenrod;
+    color: #6acfc7;
   }
   .logo .logo_link {
     height: 100%;

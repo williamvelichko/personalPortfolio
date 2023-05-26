@@ -45,18 +45,15 @@ function Contact(props) {
         .then(
           (result) => {
             setSentEmail("Sent");
-            console.log(result.text);
-            console.log("success");
           },
           (error) => {
-            console.log(error.text);
             console.log("fail");
           }
         );
     }
   };
 
-  const isError = sentEmail === "Fail";
+  // const isError = sentEmail === "Fail";
   if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
@@ -69,35 +66,44 @@ function Contact(props) {
             <h2>Get In Touch</h2>
             <input
               type="text"
-              placeholder={isError ? "Name required" : "Name"}
+              placeholder={sentEmail ? "Name required" : "Name"}
               name="name"
               value={userInfo.name}
               onChange={handleChange}
-              className={isError ? "error" : ""}
+              className={sentEmail ? "error" : ""}
               style={{
-                borderColor: sentEmail === "Fail" && "red",
+                borderColor:
+                  sentEmail === "Fail"
+                    ? "red"
+                    : sentEmail === "Sent" && "green",
               }}
             />
             <input
               type="email"
-              placeholder={isError ? "Email required" : "Email"}
+              placeholder={sentEmail ? "Email required" : "Email"}
               name="email"
               value={userInfo.email}
               onChange={handleChange}
-              className={isError ? "error" : ""}
+              className={sentEmail ? "error" : ""}
               style={{
-                borderColor: sentEmail === "Fail" && "red",
+                borderColor:
+                  sentEmail === "Fail"
+                    ? "red"
+                    : sentEmail === "Sent" && "green",
               }}
             />
             <textarea
-              placeholder={isError ? "Message required" : "Message"}
+              placeholder={sentEmail ? "Message required" : "Message"}
               name="message"
               rows="8"
               value={userInfo.message}
               onChange={handleChange}
-              className={isError ? "error" : ""}
+              className={sentEmail ? "error" : ""}
               style={{
-                borderColor: sentEmail === "Fail" && "red",
+                borderColor:
+                  sentEmail === "Fail"
+                    ? "red"
+                    : sentEmail === "Sent" && "green",
               }}
             ></textarea>
             {sentEmail === "Sent" ? (
