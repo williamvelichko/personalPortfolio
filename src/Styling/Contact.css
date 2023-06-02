@@ -33,9 +33,6 @@
   margin-top: 50px;
 }
 
-.contact_info_div {
-}
-
 .contact_media {
   display: flex;
   flex-direction: column;
@@ -48,7 +45,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: goldenrod;
+  background-color: #ffffff;
 }
 
 .contact_media p {
@@ -60,13 +57,12 @@
 .contact_media h2 {
   width: 100%;
   display: flex;
-  /* justify-content: center; */
   background-color: #00509d;
-  color: goldenrod;
+  color: #6acfc7;
 }
 
 .contact_icons {
-  background-color: goldenrod;
+  background-color: #6acfc7;
   display: flex;
   align-items: center;
 }
@@ -76,12 +72,12 @@
   flex-direction: column;
   width: 100%;
   padding: 30px;
-  background-color: goldenrod;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 
 .form_container form h2 {
-  background-color: goldenrod;
+  background-color: #ffffff;
   color: black;
 }
 
@@ -91,7 +87,7 @@
   margin-bottom: 30px;
   border: 2px solid black;
   font-family: "Rubik";
-  background-color: rgb(216, 181, 91);
+  background-color: rgb(237, 252, 255);
   color: black;
 }
 
@@ -114,17 +110,17 @@ input:-webkit-autofill:active {
 .form_container .form .submit_button {
   width: 40%;
   margin: auto;
-  color: goldenrod;
+  color: #0c1a1a;
   padding: 13px;
-  background-color: #00509d;
+  background-color: #0c1a1a;
   border-radius: 50px;
   border: transparent;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: underline;
-  background: linear-gradient(#00509d, #00509d 50%, black 50%, black);
+  background: linear-gradient(#6acfc7, #6acfc7 50%, #0c1a1a 50%, #0c1a1a);
   background-size: 100% 200%;
-  transition: background 0.4s;
+  transition: 0.4s;
 }
 .submit_button p {
   background-color: transparent;
@@ -133,6 +129,7 @@ input:-webkit-autofill:active {
 
 .form_container .form button:hover {
   background-position: 100% 100%;
+  color: #ffffff;
 }
 
 .sent_email {

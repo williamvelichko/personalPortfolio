@@ -86,7 +86,7 @@
 .img_container a {
   text-decoration: none;
   width: 100%;
-  background-color: goldenrod;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,7 +97,7 @@
   flex-direction: column;
   justify-content: end;
   margin: 0;
-  background-color: goldenrod;
+  background-color: #6acfc7;
   color: rgb(10, 84, 169);
   padding: 20px;
 }

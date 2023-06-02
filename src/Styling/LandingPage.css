@@ -17,6 +17,7 @@ html {
 
 .landing_title {
   color: #e5e5e5;
+
   font-size: 2.26rem;
   text-transform: uppercase;
   display: flex;
@@ -35,8 +36,9 @@ html {
 }
 .landing_title h2 {
   font-size: 2.5rem;
-  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
-    0 0 3px rgba(255, 255, 255, 0.3);
+  /* text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3); */
+  color: #6acfc7;
   margin-right: 5px;
 }
 .landing_html {
@@ -52,7 +54,7 @@ html {
 }
 .par_element1,
 .par_element2 {
-  color: #ffd60a;
+  color: #fff;
   font-size: 0.9rem;
   width: 50%;
 }
@@ -61,7 +63,7 @@ html {
   justify-content: flex-end;
 }
 .par_description {
-  color: goldenrod;
+  color: #fff;
   width: 50%;
   font-size: 1.3rem;
   font-weight: 50;
@@ -88,19 +90,22 @@ html {
 }
 
 .first div {
-  background-color: goldenrod;
+  /* background-color: #6acfc7; */
+  color: #6acfc7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .second div {
-  background-color: goldenrod;
+  /* background-color: #6acfc7; */
+  color: #6acfc7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .third div {
-  background-color: goldenrod;
+  /* background-color: #6acfc7; */
+  color: #6acfc7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +150,7 @@ html {
 }
 
 .landing_contact {
-  --c: goldenrod;
+  --c: #6acfc7;
   color: var(--c);
   font-size: 16px;
   border: 0.3em solid var(--c);
@@ -212,7 +217,7 @@ html {
 .landing_scroll p {
   display: flex;
   justify-content: center;
-  color: goldenrod;
+  color: #fff;
   width: 25%;
   height: 25%;
 

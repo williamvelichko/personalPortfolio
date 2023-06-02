@@ -32,12 +32,12 @@
   margin-bottom: 50px;
   align-items: center;
   width: 80%;
-  border-top: 1px dashed #ffd60a;
-  border-bottom: 1px dashed #ffd60a;
+  border-top: 1px dashed #ffffff;
+  border-bottom: 1px dashed #ffffff;
   line-height: 25px;
 }
 .about_inside_par {
-  color: goldenrod;
+  color: #ffffff;
   margin: 0;
   width: 90%;
   font-size: 1.2rem;
@@ -52,7 +52,7 @@
   width: 90%;
   display: flex;
   font-size: 1rem;
-  color: #ffd60a;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -62,13 +62,13 @@
   font-size: 1.5rem;
 }
 .about_link h5 {
-  color: #ffd60a;
+  color: #6acfc7;
   padding: 8px;
   border-radius: 5px;
   transition: 0.9s ease;
 }
 .about_link h5:hover {
-  background-color: goldenrod;
+  background-color: #6acfc7;
   color: black;
 }
 
@@ -77,7 +77,7 @@
   display: flex;
   justify-content: center;
   margin: auto;
-  box-shadow: 0 4px 8px 0 goldenrod, 0 4px 8px 0 goldenrod;
+  box-shadow: 0 4px 8px 0 #6acfc7, 0 4px 8px 0 #6acfc7;
 }
 .about_img_div img {
   object-fit: contain;
