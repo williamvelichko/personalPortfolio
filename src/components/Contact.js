@@ -53,7 +53,6 @@ function Contact(props) {
     }
   };
 
-  // const isError = sentEmail === "Fail";
   if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
