@@ -25,12 +25,13 @@ function Skills(props) {
             </p>
             <div className="skills_inside_par">
               <p>
-                I possess a comprehensive set of skills that are highly valued
-                in the modern tech industry. My expertise in frontend
-                technologies like ReactJS and TypeScript, combined with my
-                proficiency in backend technologies such as NodeJS, MySQL and
-                KnexJS, enable me to develop robust and efficient web
-                applications from start to finish.
+                I have a comprehensive skill set that is highly sought after in
+                the modern tech industry. My expertise lies in frontend
+                technologies such as ReactJS, Javascript, and TypeScript, as
+                well as backend technologies including NodeJS, MySQL, and
+                KnexJS. This enables me to develop robust and efficient web
+                applications from start to finish, covering both the frontend
+                and backend aspects.
               </p>
             </div>
             <p className="skills_par_element">

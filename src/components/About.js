@@ -18,7 +18,7 @@ function About(props) {
     return (
       <div className="about_container">
         <div className="about_title">
-          <h1>Who Am I?</h1>
+          <h1>Who Am I ?</h1>
         </div>
         <div className="about_img_div">
           <img src={require("../Images/IMG_1697.JPG")} />
@@ -29,19 +29,29 @@ function About(props) {
           </p>
           <div className="about_inside_par">
             <p>
-              I am William Velichko and I am currently a software developer who
-              is passionate about impacting people lifes threw building FrontEnd
-              UI, working with large data, and building API's
+              My name is William Velichko, and I am currently working as a
+              software developer. I have a strong passion for creating impactful
+              FrontEnd UI, working with large datasets, and building API's that
+              have the potential to make a positive difference in people's
+              lives.
             </p>
             <p>
-              I love Jesus Christ, sports, Outdoors, Music, and I love
-              communicating and enteracting with others
+              Outside of my professional pursuits, I have a deep love for Jesus
+              Christ, sports, the outdoors, and music. I greatly enjoy
+              communicating and interacting with others, as I find it rewarding
+              to connect with people from diverse backgrounds.
             </p>
             <p>
-              I love to face challenges and discover new opportunities where I
-              can both contribute value and learn. I'm intrigued with the
-              diversity and profound impact related to working within software
-              engineering and the web development industry
+              I thrive on challenges and actively seek out new opportunities
+              that allow me to contribute value while continuously learning and
+              growing. The software engineering and web development industry
+              captivate me with its diversity and the profound impact it has on
+              society.
+            </p>
+            <p>
+              Overall, I am driven by my enthusiasm for creating meaningful
+              software solutions and the desire to make a lasting impact through
+              my work in the field of web development.
             </p>
           </div>
           <p className="about_par_element2">
