@@ -60,10 +60,33 @@
 
 .single_skill {
   display: flex;
-  border: 1px solid #6acfc7;
+  border: 0.5px solid #6acfc7;
   width: 20%;
   justify-content: center;
   margin: 10px;
+
+  -webkit-mask-image: linear-gradient(
+    45deg,
+    #f0eaea 25%,
+    rgba(255, 255, 255, 0.046) 50%,
+    #faf2f2 75%
+  );
+  mask-image: linear-gradient(
+    45deg,
+    #faf2f2 25%,
+    rgba(255, 255, 255, 0.046) 50%,
+    #faf2f2 75%
+  );
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: left;
+  mask-position: left;
+}
+.single_skill:hover {
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
 }
 
 .single_skill h4 {
