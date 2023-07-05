@@ -9,7 +9,7 @@ function SideBar() {
   return (
     <div className="sideBar_container">
       <div classname="sideBar_logo">
-        <Link to="/landingpage" className="logo_link">
+        <Link to="/" className="logo_link">
           <h1 className="letters">WV</h1>
         </Link>
         <h5>William Velichko</h5>
