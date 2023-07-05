@@ -40,19 +40,43 @@ function Skills(props) {
           </div>
         </div>
         <div className="skills">
-          <div className="progress">
+          <div className="single_skill">
+            <h4>Javascript</h4>
+          </div>
+          <div className="single_skill">
+            <h4>TypeScript</h4>
+          </div>
+          <div className="single_skill">
+            <h4>NodeJs</h4>
+          </div>
+          <div className="single_skill">
+            <h4>ReactJs</h4>
+          </div>
+          <div className="single_skill">
+            <h4>CSS</h4>
+          </div>
+          <div className="single_skill">
+            <h4>Redux</h4>
+          </div>
+          <div className="single_skill">
+            <h4>SQL</h4>
+          </div>
+          <div className="single_skill">
+            <h4>KnexJs</h4>
+          </div>
+
+          {/* <div className="progress">
             <h3>FrontEnd:</h3>
             <div className="w3-light-grey">
               <div className="w3-green" style={{ width: "80%" }}>
-                {/* 80% */}
+             
               </div>
             </div>
           </div>
           <div className="progress">
             <h3>BackEnd:</h3>
             <div className="w3-light-grey">
-              <div className="w3-green" style={{ width: "60%" }}>
-                {/* 60% */}
+              
               </div>
             </div>
           </div>
@@ -60,7 +84,7 @@ function Skills(props) {
             <h3>ReactJS:</h3>
             <div className="w3-light-grey">
               <div className="w3-green" style={{ width: "80%" }}>
-                {/* 80% */}
+            
               </div>
             </div>
           </div>
@@ -68,7 +92,7 @@ function Skills(props) {
             <h3>JavaScript:</h3>
             <div className="w3-light-grey">
               <div className="w3-green" style={{ width: "85%" }}>
-                {/* 85% */}
+            
               </div>
             </div>
           </div>
@@ -76,10 +100,10 @@ function Skills(props) {
             <h3>TypeScript:</h3>
             <div className="w3-light-grey">
               <div className="w3-green" style={{ width: "30%" }}>
-                {/* 30% */}
+             
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );

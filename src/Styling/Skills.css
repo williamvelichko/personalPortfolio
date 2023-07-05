@@ -49,12 +49,28 @@
 
 .skills {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 80%;
   margin: auto;
   margin-top: 70px;
   margin-bottom: 50px;
 }
+
+.single_skill {
+  display: flex;
+  border: 1px solid #6acfc7;
+  width: 20%;
+  justify-content: center;
+  margin: 10px;
+}
+
+.single_skill h4 {
+  color: #6acfc7;
+  font-size: 1rem;
+}
+
 .skills h3 {
   color: #ffffff;
   font-family: "roboto";
@@ -99,6 +115,14 @@
   }
   .skills h3 {
     width: 50%;
+  }
+}
+@media (max-width: 550px) {
+  .single_skill {
+    width: 40%;
+  }
+  .single_skill h4 {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 420px) {
