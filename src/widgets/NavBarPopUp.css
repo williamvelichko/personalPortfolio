@@ -147,6 +147,18 @@
     color: #6acfc7;
   }
 
+  .logo-img-nav {
+    width: 15%;
+    height: 15%;
+    object-fit: contain;
+    border-radius: 50%;
+    color: #6acfc7;
+    transition: all 0.5s ease-out;
+  }
+  .logo-img-nav:hover {
+    box-shadow: #6acfc7 0px 3px 8px;
+  }
+
   .logo {
     display: flex;
     flex-direction: column;
@@ -188,5 +200,12 @@
 
   .nav-container input[type="checkbox"]:checked ~ .logo {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-img-nav {
+    width: 25%;
+    height: 205%;
   }
 }
