@@ -38,7 +38,10 @@ function NavBarPopUp() {
                 className="logo_link"
                 onClick={handleCheckboxChange}
               >
-                <h1 className="letters">WV</h1>
+                <img
+                  className="logo-img-nav"
+                  src={require("../Images/transparentLogo2.png")}
+                />
               </Link>
               <h5>William Velichko</h5>
             </div>
