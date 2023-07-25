@@ -25,16 +25,17 @@ function LandingPage() {
         <div className="landing_min">
           <div className="landing_title">
             <div className="hello_container">
-              <h2>Hello 👋 I'm</h2>
+              {/* <h2>Hello 👋 I'm</h2> */}
+              <div className="h2-title">Hello 👋 I'm</div>
               <section className="landing_animation">
                 <div className="first">
-                  <div>William Velichko</div>
+                  <div className="h2-title ">William Velichko</div>
                 </div>
                 <div className="second">
-                  <div>Software Engineer</div>
+                  <div className="h2-title ">Software Engineer</div>
                 </div>
                 <div className="third">
-                  <div>FullStack Developer</div>
+                  <div className="h2-title">FullStack Developer</div>
                 </div>
               </section>
             </div>

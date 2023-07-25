@@ -34,10 +34,11 @@ html {
   align-items: center;
   justify-content: center;
 }
-.landing_title h2 {
+/* .hello_container * {
+  border: 1px solid red;
+} */
+.hello_container .h2-title {
   font-size: 2.5rem;
-  /* text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
-    0 0 3px rgba(255, 255, 255, 0.3); */
   color: #6acfc7;
   margin-right: 5px;
 }
@@ -75,12 +76,15 @@ html {
 .landing_animation {
   height: 50px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .landing_animation > div > div {
   width: 100%;
-  padding: 0.25rem 0.75rem;
-  height: 2.81rem;
+  /* padding: 0.25rem 0.75rem; */
+  /* height: 2.81rem; */
+  height: 100%;
   margin-bottom: 2.81rem;
   display: inline-block;
 }
@@ -89,26 +93,11 @@ html {
   animation: text-animation 8s infinite;
 }
 
-.first div {
-  /* background-color: #6acfc7; */
-  color: #6acfc7;
+.first .second .third div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.second div {
-  /* background-color: #6acfc7; */
-  color: #6acfc7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.third div {
-  /* background-color: #6acfc7; */
-  color: #6acfc7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: start;
 }
 
 @keyframes text-animation {
