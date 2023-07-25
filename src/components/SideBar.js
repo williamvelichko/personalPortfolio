@@ -9,7 +9,7 @@ function SideBar() {
   return (
     <div className="sideBar_container">
       <div classname="sideBar_logo">
-        <Link to="/landingpage" className="logo_link">
+      <Link to="/" className="logo_link">
           <img
             className="logo-img"
             src={require("../Images/transparentLogo2.png")}

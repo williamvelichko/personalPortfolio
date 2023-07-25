@@ -34,7 +34,7 @@ function NavBarPopUp() {
           <div className="menu-items">
             <div className="logo">
               <Link
-                to="/landingpage"
+                to="/"
                 className="logo_link"
                 onClick={handleCheckboxChange}
               >
