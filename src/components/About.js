@@ -21,7 +21,7 @@ function About(props) {
           <h1>Who Am I ?</h1>
         </div>
         <div className="about_img_div">
-          <img src={require("../Images/IMG_1697.JPG")} />
+          <img src={"/Images/profileImage.png"} />
         </div>
         <div className="about_description_container">
           <p className="about_par_element1">

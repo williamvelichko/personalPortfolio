@@ -81,7 +81,6 @@
 }
 .about_img_div img {
   object-fit: contain;
-  /* width: 350px; */
   width: 85%;
 }
 

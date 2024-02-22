@@ -9,11 +9,8 @@ function SideBar() {
   return (
     <div className="sideBar_container">
       <div classname="sideBar_logo">
-      <Link to="/" className="logo_link">
-          <img
-            className="logo-img"
-            src={require("../Images/transparentLogo2.png")}
-          />
+        <Link to="/" className="logo_link">
+          <img className="logo-img" src={"../Images/transparentLogo2.png"} />
         </Link>
         <h5>William Velichko</h5>
       </div>

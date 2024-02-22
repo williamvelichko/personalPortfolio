@@ -1,0 +1,45 @@
+{
+  "experience": [
+    {
+      "name": "BusyBucket",
+      "link": "https://www.busybucket.io/",
+      "image": "/Images/ScreenShot2.png"
+    },
+    {
+      "name": "Bay Valley Tech",
+      "link": "https://www.bayvalleytech.com",
+      "image": "/Images/BayValleyTech.png"
+    },
+    {
+      "name": "Mojo Planning",
+      "link": "https://www.mojoplanning.com/",
+      "image": "/Images/ScreenShot.png"
+    },
+    {
+      "name": "Sacramento Fishing Store",
+      "link": "https://sac-fishing.vercel.app/",
+      "image": "/Images/ScreenShotFishingStore.png"
+    },
+
+    {
+      "name": "Ripple",
+      "link": "https://ripple-production.vercel.app/",
+      "image": "/Images/ripple.png"
+    },
+    {
+      "name": "Faithful Steward Conference",
+      "link": "https://faithfull-steward-conference.vercel.app/",
+      "image": "/Images/faithfulSteward.png"
+    },
+    {
+      "name": "Bible Babtist Church",
+      "link": "https://development.d2r4q01yre7c94.amplifyapp.com/",
+      "image": "/Images/bibleBabtist.png"
+    },
+    {
+      "name": "Youth Worship App",
+      "link": "https://youthworship.vercel.app/",
+      "image": "/Images/worshipapp.png"
+    }
+  ]
+}

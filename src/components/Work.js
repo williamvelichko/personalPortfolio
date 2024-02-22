@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styling/Work.css";
 import LoadingClip from "../widgets/LoadingClip";
+import ExperienceData from "../Data/experience.json";
 
 function Work(props) {
   const [loading, setLoading] = useState(false);
@@ -17,31 +18,16 @@ function Work(props) {
       <div className="work_main_container">
         <div className="work_container">
           <div className="work_title">
-            <h1>Where I worked</h1>
+            <h1>Experience</h1>
           </div>
           <div className="work_company">
-            <div className="img_container">
-              <a target="_blank" href="https://www.busybucket.io/">
-                <img src={require("../Images/ScreenShot2.png")} />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="projects_container">
-          <div className="work_title">
-            <h1>Some things i built</h1>
-          </div>
-          <div className="singleProject">
-            <div className="img_container">
-              <a target="_blank" href="https://www.mojoplanning.com/">
-                <img src={require("../Images/ScreenShot.png")} />
-              </a>
-            </div>
-            <div className="img_container">
-              <a target="_blank" href="https://sac-fishing.vercel.app/">
-                <img src={require("../Images/ScreenShotFishingStore.png")} />
-              </a>
-            </div>
+            {ExperienceData.experience.map((exp, index) => (
+              <div className="img_container" key={index}>
+                <a target="_blank" href={exp.link}>
+                  <img src={exp.image} alt={exp.name} />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>

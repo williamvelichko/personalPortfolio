@@ -33,14 +33,10 @@ function NavBarPopUp() {
 
           <div className="menu-items">
             <div className="logo">
-              <Link
-                to="/"
-                className="logo_link"
-                onClick={handleCheckboxChange}
-              >
+              <Link to="/" className="logo_link" onClick={handleCheckboxChange}>
                 <img
                   className="logo-img-nav"
-                  src={require("../Images/transparentLogo2.png")}
+                  src={"../Images/transparentLogo2.png"}
                 />
               </Link>
               <h5>William Velichko</h5>
