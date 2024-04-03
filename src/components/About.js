@@ -4,15 +4,23 @@ import "../Styling/About.css";
 import LoadingClip from "../widgets/LoadingClip";
 
 function About(props) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
+    const img = new Image();
+    img.src = "/Images/profileImage.png";
+    img.onload = () => {
       setLoading(false);
-    }, 1000);
+      setImageLoaded(true);
+    };
+    img.onerror = () => {
+      setLoading(false);
+      setImageLoaded(false);
+    };
     window.scrollTo(0, 0);
   }, []);
+
   if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
@@ -21,7 +29,9 @@ function About(props) {
           <h1>Who Am I ?</h1>
         </div>
         <div className="about_img_div">
-          <img src={"/Images/profileImage.png"} />
+          {imageLoaded ? (
+            <img src={"/Images/profileImage.png"} alt="Profile" />
+          ) : null}
         </div>
         <div className="about_description_container">
           <p className="about_par_element1">
