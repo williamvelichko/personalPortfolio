@@ -4,23 +4,25 @@ import "../Styling/About.css";
 import LoadingClip from "../widgets/LoadingClip";
 
 function About(props) {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const img = new Image();
     img.src = "/Images/profileImage.png";
     img.onload = () => {
-      setLoading(false);
       setImageLoaded(true);
     };
     img.onerror = () => {
-      setLoading(false);
       setImageLoaded(false);
     };
+
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
     window.scrollTo(0, 0);
   }, []);
-
   if (loading && !props.onLandingPage) return <LoadingClip />;
   else
     return (
