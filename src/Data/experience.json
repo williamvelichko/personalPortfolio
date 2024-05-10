@@ -40,6 +40,16 @@
       "name": "Youth Worship App",
       "link": "https://youthworship.vercel.app/",
       "image": "/Images/worshipapp.png"
+    },
+    {
+      "name": "Bridge",
+      "link": "https://bridge-google-hackathon.vercel.app/",
+      "image": "/Images/Bridge.png"
+    },
+    {
+      "name": "Central Valley News",
+      "link": "https://central-valley-news.netlify.app/",
+      "image": "/Images/CentralNews.png"
     }
   ]
 }
